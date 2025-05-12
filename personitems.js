@@ -79,11 +79,19 @@ define(['questAPI'], function(Quest){
 	        answers: ['Man', 'Woman', 'Non-binary OR genderqueer OR agender OR gender non-conforming OR another identity not listed here', 'Decline to answer']
 	    },
 
-		// Q5 TODO zipcurrent, add and make text
-		// {},
+		// Q5 zipcurrent
+		{
+			inherit: 'text',
+			name: 'zipcurrent',
+			stem: 'What is the ZIP code of your current residence? Please enter a five digit ZIP code.'
+		},
 
-		// Q6 TODO ziplongest, add and make text
-		// {},
+		// Q6 ziplongest
+		{
+			inherit: 'text',
+			name: 'ziplongest',
+			stem: 'What is the ZIP code of the place you have lived the longest? Please enter a five digit ZIP code.'
+		},
 
 		]
 	});
