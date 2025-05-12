@@ -10,6 +10,11 @@ define(['questAPI'], function(Quest){
 	    autoSubmit:false,
 	    required: true
 	});
+
+	// TODO: add selectMulti questions set
+
+	// TODO: add text questions set
+
 	
     /**
 	Pages
@@ -46,14 +51,6 @@ define(['questAPI'], function(Quest){
 	        name: 'genderidentity',
 	        stem: 'What is your gender identity?',
 	        answers: ['Man', 'Woman', 'Non-binary OR genderqueer OR agender OR gender non-conforming OR another identity not listed here', 'Decline to answer']
-	    },
-
-		// TODO: remove question
-	    {
-	        inherit: 'dropd',
-	        name: 'letter',
-	        stem: 'Please choose the first letter of your first name:',
-	        answers: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 	    },
 
 		// Q5 TODO zipcurrent, add and make text
