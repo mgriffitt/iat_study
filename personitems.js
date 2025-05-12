@@ -11,9 +11,30 @@ define(['questAPI'], function(Quest){
 	    required: true
 	});
 
-	// TODO: add selectMulti questions set
+	API.addQuestionsSet('multi', 
+	{
+	    type: 'selectMulti',
+	    autoSubmit:false,
+	    required: true
+	});
 
-	// TODO: add text questions set
+	API.addQuestionsSet('text', 
+	{
+	    type: 'text',
+	    autoSubmit:false,
+	    required: true
+		// TODO: enable validations (need comma after required)
+		//pattern: /[0-9]{5}/, // matches 5 digit zip
+		//minlength: 5,
+		//maxlength: 5,
+		//maxlengthLimit: true,
+		//errorMsg: {
+			//pattern: "TBD",
+			//minlength: "TBD"
+			//maxlength: "TBD",
+			//maxlengthLimit: "TBD"
+		//}
+	});
 
 	
     /**
