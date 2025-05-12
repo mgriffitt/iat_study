@@ -22,18 +22,13 @@ define(['questAPI'], function(Quest){
 	{
 	    type: 'text',
 	    autoSubmit:false,
-	    required: true
-		// TODO: enable validations (need comma after required)
-		//pattern: /[0-9]{5}/, // matches 5 digit zip
-		//minlength: 5,
-		//maxlength: 5,
-		//maxlengthLimit: true,
-		//errorMsg: {
-			//pattern: "TBD",
-			//minlength: "TBD"
-			//maxlength: "TBD",
-			//maxlengthLimit: "TBD"
-		//}
+	    required: true,
+		pattern: /[0-9]{5}/,  // matches 5 digit zip
+		maxlength: 5,         // prevents extra characters
+		errorMsg: {
+			pattern: "ZIP code must be a five-digit integer",
+			maxlength: "ZIP code must be five-digit integer"
+		}
 	});
 
 	
