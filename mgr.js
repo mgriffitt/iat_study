@@ -72,6 +72,13 @@ define(['managerAPI',
             header: 'Welcome'
         }],
 
+        // Customization: Adding personitems for demographic questions
+        personitems: [{
+            type: 'quest',
+            name: 'personitems',
+            scriptUrl: 'personitems.js'
+        }],
+
         raceiat_instructions: [{
             inherit: 'instructions',
             name: 'raceiat_instructions',
@@ -155,6 +162,10 @@ define(['managerAPI',
         
         
         {inherit: 'intro'},
+
+        // Customization: Adding personitems for demographic questions
+        {inherit: 'personitems'},
+
         {
             mixer:'random',
             data:[
