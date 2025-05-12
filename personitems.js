@@ -21,14 +21,6 @@ define(['questAPI'], function(Quest){
 		
 		questions: [
 
-		// Q4 TODO gender identity, move down
-	    {
-	        inherit: 'dropd',
-	        name: 'eyecolor',
-	        stem: 'Please choose which eye-color you have:',
-	        answers: ['Man', 'Woman', 'Non-binary OR genderqueer OR agender OR gender non-conforming OR another identity not listed here', 'Decline to answer']
-	    },
-
 		// TODO: Q2 birthmonth, move down
 	    {
 	        inherit: 'dropd',
@@ -46,6 +38,15 @@ define(['questAPI'], function(Quest){
 	    },
 
 		// Q3 TODO race, add and make selectMulti
+		// {},
+
+		// Q4 genderidentity
+	    {
+	        inherit: 'dropd',
+	        name: 'genderidentity',
+	        stem: 'What is your gender identity?',
+	        answers: ['Man', 'Woman', 'Non-binary OR genderqueer OR agender OR gender non-conforming OR another identity not listed here', 'Decline to answer']
+	    },
 
 		// TODO: remove question
 	    {
