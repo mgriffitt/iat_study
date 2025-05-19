@@ -1,5 +1,5 @@
 # iat_study
-Production version of IAT Study
+Production version of the IAT Study
 
-# Study can be taken here
+## Study can be taken here:
 [IAT Study](https://mgriffitt.github.io/iat_study/)
