@@ -100,7 +100,11 @@ define(['questAPI'], function(Quest){
 
 		// TODO: add study code question
 		// Q1 study code
-		// {}
+		{
+			inherit: 'text',
+			name: 'studycode',
+			stem: 'Please enter your IAT study code, it should be the same one you entered on the Dissertation Survey:'
+		}
 
 		]
 	});
