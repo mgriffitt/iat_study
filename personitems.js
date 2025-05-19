@@ -5,7 +5,7 @@ define(['questAPI'], function(Quest){
     Settings
     **/
 
-	// TODO: Add note that not currently used
+	// NB: not currently used
 	API.addQuestionsSet('dropd', 
 	{
 	    type: 'dropdown',
@@ -13,7 +13,7 @@ define(['questAPI'], function(Quest){
 	    required: true
 	});
 
-	// TODO: Add note that not currently used
+	// NB: not currently used
 	API.addQuestionsSet('multi', 
 	{
 	    type: 'selectMulti',
@@ -21,17 +21,16 @@ define(['questAPI'], function(Quest){
 	    required: true
 	});
 
-	// TODO: modify validation for study code format
 	API.addQuestionsSet('text', 
 	{
 	    type: 'text',
 	    autoSubmit:false,
 	    required: true,
-		pattern: /[0-9]{5}/,  // matches 5 digit zip
-		maxlength: 5,         // prevents extra characters
+		pattern: /[CDGHJLMPQRTVWXYZ23456789]{8}/,  // matches study code charset
+		maxlength: 8,  // prevents extra characters
 		errorMsg: {
-			pattern: "ZIP code must be a five-digit integer",
-			maxlength: "ZIP code must be five-digit integer"
+			pattern: "Study code must be an eight-character string of uppercase letters and numbers",
+			maxLength: "Study code must be an eight-character string of uppercase letters and numbers"
 		}
 	});
 
